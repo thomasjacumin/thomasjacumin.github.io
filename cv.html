@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="resources/images/photo.png">
+        <title>Thomas Jacumin's Homepage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+
+            body {
+                display: flex;
+                flex-flow: column;
+            }
+        </style>
+    </head>
+    <body style="background-color: #e1eacb;">
+        <header>
+            <nav class="navbar navbar-expand-lg p-3" style="background-color: #728255; border-radius: 0 0 30px 30px;" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Thomas Jacumin's Homepage</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="cv.html">CV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="teaching.html">Teaching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="other.html">Other Activities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid fill-height" style="flex-grow: 1;">
+            <div class="row h-100">
+            
+                <div class="col p-2">
+
+                    <div class="card p-3 h-100" style="background-color: #faf7d8; border-radius: 30px; border: 0;">
+                        <h5 class="card-title p-3 text-center" style="background-color: #728255; border-radius: 30px; color: #faf7d8;">Curriculum Vitae</h5>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+
+                            <p class="card-text"> 
+                                You can download my CV (<a href="resources/documents/CV-JACUMIN.pdf" target="_blank">.pdf</a>).
+                            </p>
+
+                            <p class="card-text">
+                                <h5>Education</h5>
+                                <ul>
+                                    <li>2019-2022: <b>PhD in Applied Mathematics</b>, <i>University of Haute-Alsace, France</i>, under the supervision of Pr. Z. Belhachmi (<a href="https://theses.hal.science/tel-04066447/" target="_blank">.pdf</a>)</li>
+                                    <li>2016-2018: <b>Master in Modeling and Applied Mathematics</b>, <i>University of Rouen, France and University of Augsburg, Germany</i> (<a href="resources/documents/master-thesis-jacumin.pdf" target="_blank">.pdf</a>, <a href="resources/documents/codes/code-master-thesis-jacumin.zip" target="_blank">.py</a>)</li>
+                                    <li>2015-2016: <b>1st Year of Engineering School</b>, <i>École nationale Supérieure en Informatique, Systèmes Avancés et Réseaux, France</i></li>
+                                    <li>2013-2015: <b>DEUG of Mathematics "Prépa Écoles Ingénieurs"</b>, <i>University of Avignon, France</i></li>
+                                    <li>2010-2013: <b>Baccalauréat Scientifique</b>, <i>Lycée de l'Arc, France</i></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Publications</h5>
+                                <ul>
+                                    <li>Thomas Jacumin and Andreas Langer, 2025. An Adaptive Finite Difference Method for Total Variation Minimization. Numer Algor. doi: <a href="https://doi.org/10.1007/s11075-025-02044-6" target="_blank">10.1007/s11075-025-02044-6</a>.</li>
+                                    <li>Zakaria Belhachmi and Thomas Jacumin. “Adjoint Method in PDE-Based Image Compression.” <i>Asymptotic Analysis</i>, October 7, 2024, 1–28. doi: <a href="https://doi.org/10.3233/ASY-241944" target="_blank">10.3233/ASY-241944</a>.</li>
+                                    <li>Zakaria Belhachmi and Thomas Jacumin. “Optimal interpolation data for PDE-based compression of images with noise”. en. In: <i>Communications in Nonlinear Science and Numerical Simulation</i> 109 (June 2022), p. 106278. issn: 1007-5704. doi: <a href="https://doi.org/10.1016/j.cnsns.2022.106278" target="_blank">10.1016/j.cnsns.2022.106278</a>.</li>
+                                </ul>
+                            </p>
+
+                            <p class="card-text">
+                                <h5>Preprints</h5>
+                                <ul>
+                                    <li>Zakaria Belhachmi and Thomas Jacumin. <i>Optimal Transport Model of Optical Flow Estimation: Constant and Varying Illumination Cases</i>. hal:04829141. Dec. 2024. hal: <a href="https://hal.science/hal-04829141" target="_blank">hal-04829141</a> (Submitted).</li>
+                                    <li>Zakaria Belhachmi and Thomas Jacumin. <i>Iterative Approach to Image Compression with Noise : Optimizing Spatial and Tonal Data</i>. arXiv:2209.14706. Sept. 2022. doi: <a href="https://doi.org/10.48550/arXiv.2209.14706" target="_blank">10.48550/arXiv.2209.14706</a>.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Communications</h5>
+                                <ul>
+                                    <li>November 2024: An Adaptive Finite Difference Method for Total Variation Minimization, Seminar, <i>University of Lund, Sweden</i></li>
+                                    <li>January 2024: Modèle Transport Optimal pour la Formulation du Flot Optique, ANR SOCOT, <i>University of Haute-Alsace, France</i> (<a href="https://anr.fr/fileadmin/aap/2023/selection/aapg-selection-2023-5-270723.pdf" target="_blank">website</a>)</li>
+                                    <li>July 2023: Méthodes Adaptatives pour les Problèmes de Discontinuité, MAThEOR Days, <i>University of Strasbourg, France</i> (<a href="https://days.matheor.com/2023/" target="_blank">website</a>, <a href="resources/documents/beamers/MAThEOR_s_days_2023.pdf" target="_blank">.pdf</a>)</li>
+                                    <li>October 2022: Mini-symposium - Inverse problems and shape optimization, <i>PICOF22, University of Caen, France</i> (<a href="https://picof22.sciencesconf.org/" target="_blank">website</a>, <a href="resources/documents/beamers/picof2022-jacumin.pdf" target="_blank">.pdf</a>)</li>                                    
+                                    <li>June 2022: PhD Seminar, <i>IRIMAS, University of Haute-Alsace, France</i> (<a href="resources/documents/beamers/Séminaire_Doctorants_IRIMAS.pdf" target="_blank">.pdf</a>)</li>
+                                    <li>December 2021: Poster - Calculus of Variations Colloquium, <i>University of Nancy, France</i> (<a href="https://indico.math.cnrs.fr/event/7000/" target="_blank">website</a>, <a href="resources/documents/beamers/Poster___Calcul_des_Variations___Nancy.pdf" target="_blank">.pdf</a>)</li>
+                                </ul>
+                            </p>
+
+                            <p class="card-text">
+                                <h5>Other Communications</h5>
+                                <ul>
+                                    <li>June 2022: PhD Day - "Ma thèse en 180 secondes" format, <i>University of Haute-Alsace, France</i> (<a href="resources/documents/beamers/ma-these-en-180-seconde.pdf" target="_blank">.pdf</a>)</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Experiences</h5>
+                                <ul>
+                                    <li>2025-2027: <b>Postdoc in Applied Mathematics</b>, <i>University of Côte-d'Azur, France</i>, under the supervision of Pr. R. Masson (<a href="https://math.univ-cotedazur.fr/~massonr/" target="_blank">homepage</a>)</li>
+                                    <li>2023-2025: <b>Postdoc in Applied Mathematics</b>, <i>University of Lund, Sweden</i>, under the supervision of Dr. A. Langer (<a href="https://people.ricam.oeaw.ac.at/a.langer/index.html" target="_blank">homepage</a>)</li>
+                                    <li>July-August 2016: <b>Internship</b>, <i>Boxmyjob, France</i> (Taleez.com's back-office development)</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Teaching</h5>
+                                <ul>
+                                    <li>March-June 2024: <b>Bachelor Thesis Supervision</b>, Adaptive Finite Differences Method, <i>University of Lund, Sweden</i></li>
+                                    <li>April-May 2022: <b>M1 Project Supervision</b>, Image Compression by Image Inpainting, <i>University of Haute-Alsace, France</i> (<a href="resources/documents/teaching/master-project-2022.pdf" target="_blank">.pdf</a>)</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Work Groups</h5>
+                                <ul>
+                                    <li>November 2022: Benamou-Brenier Formula, Work group - Optimal Transport, <i>University of Haute-Alsace, France</i> (<a href="https://juillet.perso.math.cnrs.fr/GTTO.html" target="_blank">website</a>, <a href="resources/documents/gtto/La_mécanique_des_fluides__un_problème_de_transport__.pdf" target="_blank">.pdf</a>, <a href="resources/documents/gtto/Benamou_Brenier.ipynb" target="_blank">.ipynb</a>, <a href="resources/documents/gtto/projection_sur_K.ggb" target="_blank">.ggb</a>)</li>
+                                    <li>March 2022: C-transforms, Work group - Optimal Transport, <i>University of Haute-Alsace, France</i> (<a href="https://juillet.perso.math.cnrs.fr/GTTO.html" target="_blank">website</a>, <a href="resources/documents/gtto/c-transforms.pdf" target="_blank">.pdf</a>)</li>
+                                </ul>
+                            </p>
+
+                            <p class="card-text">
+                                <h5>Attended Summer Schools</h5>
+                                <ul>
+                                    <li>July 2023: Summer school on Numerical Analysis of nonlinear PDEs, <i>University of Leipzig, Germany</i> (<a href="https://www.mathcs.uni-leipzig.de/math/abteilungen/numerische-mathematik/summer-school-2023#:~:text=The%20Summer%20school%20on%20Numerical,in%20Leipzig%20in%20July%202023.&text=The%20target%20audience%20are%20advanced,PDEs%20and%20finite%20element%20analysis." target="_blank">website</a>)</li>
+                                </ul>
+                            </p>
+                        </div>
+                        
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Skills</h5>
+                                <ul>
+                                    <li><b>French:</b> Native</li>
+                                    <li><b>English:</b> Good</li>
+                                    <li><b>German, Japanese:</b> Notions</li>
+                                    <li><b>IT Tools:</b> python, SageMath, MATLAB, freefem++, Latex, C, C++, Java, VHDL</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Other Experiences</h5>
+                                <ul>
+                                    <li>August 2022: <b>PhD Seminar Organization</b>, Website Development, <i>IRIMAS, University of Haute-Alsace, France</i> (<a href="https://github.com/thomasjacumin666/seminaires" target="_blank">git</a>)</li>
+                                    <li>June-July 2022: <b>Colloquium Organization</b>, Website Development, <i>IRIMAS, University of Haute-Alsace, France</i> (<a href="http://www.lmia.uha.fr/colloque-lutz/" target="_blank">website</a>)</li>
+                                    <li>June 2022: <b>Event Organization</b>, Music day, <i>University of Haute-Alsace, France</i></li>
+                                    <li>September 2021: <b>AMIES Challenge</b>, Trajectories Reconstruction, <i>Eurecam</i></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 overflow-auto" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333;">
+                            <p class="card-text">
+                                <h5>Referees</h5>
+                                <ul>
+                                    <li>Belhachmi Zakaria, Professor, IRIMAS, University of Haute-Alsace, France, zakaria.belhachmi [at] uha.fr</li>
+                                    <li>Langer Andreas, Assistant Professor, LTH, University of Lund, Sweden, andreas.langer [at] math.lth.se (<a href="https://people.ricam.oeaw.ac.at/a.langer/index.html" target="_blank">homepage</a>)</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                        <div class="card-footer mt-2 text-center" style="background-color: #728255; border-radius: 30px; color: #faf7d8;">
+                            <p class="card-text">Last updated: September 2025.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-2 p-2">
+                    <div class="card p-3 h-100" style="background-color: #faf7d8; border-radius: 30px; border: 0;">
+                        <img class="h-100" style="object-fit: cover; border-radius: 30px;" src="resources/images/IMG20191001134015-modifié.jpg" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

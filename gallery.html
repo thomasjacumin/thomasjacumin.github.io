@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="resources/images/photo.png">
+        <title>Thomas Jacumin's Homepage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+
+            body {
+                display: flex;
+                flex-flow: column;
+            }
+        </style>
+    </head>
+    <body style="background-color: #e1eacb;">
+        <header>
+            <nav class="navbar navbar-expand-lg p-3" style="background-color: #728255; border-radius: 0 0 30px 30px;" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Thomas Jacumin's Homepage</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cv.html">CV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="teaching.html">Teaching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="other.html">Other Activities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid fill-height" style="flex-grow: 1;">
+            <div class="row h-100">
+            
+                <div class="col p-2">
+
+                    <div class="card p-3 h-100" style="background-color: #faf7d8; border-radius: 30px; border: 0;">
+                        <h5 class="card-title p-3 text-center" style="background-color: #728255; border-radius: 30px; color: #faf7d8;">Gallery</h5>
+                        <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
+                            <p class="card-text">
+                                <h5>TV Denoising</h5>
+                                We consider the Rudin-Osher-Fatemi model,
+                                $$ \min_{u\in BV(\Omega)\cap L^2(\Omega)} \frac{1}{2}\int_\Omega (u-f)^2\ dx + \alpha\int_\Omega |Du|. $$
+
+                                Numerical results:
+                                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/tv-denoising/cameraman-256.jpg" />
+                                        <p style="text-align: center;">Original Image.</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/tv-denoising/cameraman-noisy.0.1.png" />
+                                        <p style="text-align: center;">Noisy image \(f\).</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/tv-denoising/mesh.gif" />
+                                        <p style="text-align: center;">Mesh.</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/tv-denoising/u.gif" />
+                                        <p style="text-align: center;">Solution \(u\).</p>
+                                    </div>
+                                </div>
+
+                                References:
+                                <ul>
+                                    <li>Rudin, Leonid I., Stanley Osher, and Emad Fatemi. “Nonlinear Total Variation Based Noise Removal Algorithms.” Physica D: Nonlinear Phenomena 60, no. 1 (November 1, 1992): 259–68.</li>
+                                    <li>Hilb, Stephan, Andreas Langer, and Martin Alkämper. “A Primal-Dual Finite Element Method for Scalar and Vectorial Total Variation Minimization.” Journal of Scientific Computing 96, no. 1 (July 2023): 24.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
+                            <p class="card-text">
+                                <h5>Image Inpainting</h5> 
+                                For \(t>0\), find \(u(t,\cdot)\) in \(H^1(D)\) such that,
+                                \begin{equation}
+                                    \left\{\begin{array}{ll}
+                                        \partial_t u(t,\cdot) - \Delta u(t,\cdot) = 0, & \text{in}\ D\setminus K, \\
+                                        u(t,\cdot) = f, & \text{in}\ K, \\
+                                        \frac{\partial u(t,\cdot)}{\partial \mathbf{n}} = 0, & \text{on}\ \partial D, \\
+                                    \end{array}\right .
+                                \end{equation}
+                                \[ u(0,\cdot) = \mathbf{1}_{K} f,\ \text{in}\ D. \]
+                                
+                                Numerical results:
+                                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/inpainting/Trui-wn-0.png" />
+                                        <p style="text-align: center;">Original Image.</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/inpainting/Trui-mask-L2-H-0.png" />
+                                        <p style="text-align: center;">Inpainting Mask \(K\).</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img src="resources/images/gallery/inpainting/inpainting.gif" />
+                                        <p style="text-align: center;">Solution \(u\) over time.</p>
+                                    </div>
+                                </div>
+
+                                References:
+                                <ul>
+                                    <li>Marcelo Bertalmio, Guillermo Sapiro, Vincent Caselles, and Coloma Ballester. “Image inpainting”. In Proceedings of the 27th Annual Conference on Computer Graphics and Interactive Techniques, SIGGRAPH ’00, page 417–424, USA, 2000. ACM Press/Addison-Wesley Publishing Co..</li>
+                                    <li>Zakaria Belhachmi, Dorin Bucur, Bernhard Burgeth, and Joachim Weickert. “How to Choose Interpolation Data in Images”. SIAM Journal of Applied Mathematics, 70:333–352, January 2009.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
+                            <p class="card-text">
+                                <h5>Optical Flow</h5>
+                                We consider the following optical flow estimation problem:
+                                $$ \left\{\begin{array}{ll}
+                                    -\alpha \Delta u_1 + K_\rho\star(f_x)^2\ u_1 + K_\rho\star(f_x f_y)\ u_2 = - K_\rho\star(f_x f_t), & \text{in}\ [0,T]\times D, \\
+                                    -\alpha \Delta u_2 + K_\rho\star(f_y f_x)\ u_1 + K_\rho\star(f_y)^2\ u_2 = - K_\rho\star(f_y f_t), & \text{in}\ [0,T]\times D, \\
+                                    \frac{\partial u_1}{\partial\mathbf{n}} = \frac{\partial u_2}{\partial\mathbf{n}} = 0, & \text{on}\ [0,T]\times \partial D.
+                                \end{array}\right . $$
+                                
+                                Numerical results:
+                                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                    <div class="p-2">
+                                        <img style="width: 300px;" src="resources/images/gallery/optical-flow/frame10.png" />
+                                        <p style="text-align: center;">First Image \(f_1\).</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img style="width: 300px;" src="resources/images/gallery/optical-flow/frame11.png" />
+                                        <p style="text-align: center;">Second Image \(f_2\).</p>
+                                    </div>
+                                    <div class="p-2">
+                                        <img style="width: 300px;" src="resources/images/gallery/optical-flow/flow-gl-1-2.png" />
+                                        <p style="text-align: center;">Optical Flow \(\mathbf{u}:=(u_1,u_2)\).</p>
+                                    </div>
+                                </div>
+
+                                References:
+                                <ul>
+                                    <li>A. Bruhn, J. Weickert, and C. Schnörr, <i>Lucas/Kanade Meets Horn/Schunck: Combining Local and Global Optic Flow Methods</i>, International Journal of Computer Vision, 61 (2005), pp. 211–231.</li>
+                                </ul>
+
+                                
+                            </p>
+                            <!--
+                            <p class="card-text">
+                                <h5>Benamou-Brenier's Algorithm</h5>
+                                Wasserstein metric : \(\mu,\nu \in \mathcal{P}^\text{ac}(\mathbb{R}^d)\),
+                                \begin{equation}
+                                    W_p(\mu,\nu)^p = \min_{\pi\in\text{Marg}(\mu,\nu)}\int_{X\times Y} \vert x-y\vert^p\ d\pi(x,y).
+                                \end{equation}
+                                Benamou-Brenier's formula : \(\mu,\nu \in \mathcal{P}^\text{ac}(\mathbb{R}^d)\) with compact support,
+                                \begin{equation}
+                                    W_2(\mu,\nu)^2 = \inf_{(\rho,v)}\int_0^1 \int_\mathcal{O} \rho(t,x)\vert v(t,x)\vert^2\ dx\ dt,
+                                \end{equation}
+                                among all pairs \((\rho,v)\) satisfying :
+                                \[ \left\{ \begin{array}{ll}
+                                    \partial_t \rho + \text{div}(\rho\,v) = 0, & \text{in}\ [0,1]\times D, \\
+                                    \rho(0,\cdot) = \mu\ \ \text{and}\ \ \rho(1,\cdot) = \nu, & \text{in}\ D, \\
+                                    v\cdot n = 0, & \text{on}\ [0,1]\times \partial D.
+                                \end{array} \right . \]
+
+                                Numerical results:
+
+                                References:
+                                <ul>
+                                    <li>Benamou, Jean-David, and Yann Brenier. “A Computational Fluid Mechanics Solution to the Monge-Kantorovich Mass Transfer Problem.” Numerische Mathematik 84, no. 3 (January 1, 2000): 375–93.</li>
+                                </ul>
+                            </p>
+                            
+                            <p class="card-text">
+                                <h5>Multiscale Methods</h5>
+                                Under construction
+                            </p>
+
+                            <p class="card-text">
+                                <h5>Yee Algorithm for Maxwell's Equations</h5>
+                                Under construction
+                            </p>
+                            -->
+                        </div>
+                        <div class="card-footer mt-2 text-center" style="background-color: #728255; border-radius: 30px; color: #faf7d8;">
+                            <p class="card-text">Last updated: October 2024.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-2 p-2">
+                    <div class="card p-3 h-100" style="background-color: #faf7d8; border-radius: 30px; border: 0;">
+                        <img class="h-100" style="object-fit: cover; border-radius: 30px;" src="resources/images/PXL_20230718_144358364.jpg" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>
