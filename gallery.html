@@ -59,107 +59,168 @@
 
                     <div class="card p-3 h-100" style="background-color: #faf7d8; border-radius: 30px; border: 0;">
                         <h5 class="card-title p-3 text-center" style="background-color: #728255; border-radius: 30px; color: #faf7d8;">Gallery</h5>
+
+                        <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
+                            <p class="card-text">
+                                <h5>Reactive Transport in Porous Media</h5>
+
+                                <p>
+                                  A coupled system combining linear combinations of conservation-law PDEs of chemical species \(e\) of the form
+                                  $$ \partial_t n_e + \text{div} \Big( \mathbf{u}^{\alpha(e)} \Big) = 0, $$
+                                  where \(\mathbf{u}^{\alpha(e)}\) is the velocity of the phase containing \(e\), with nonlinear algebraic equations of the form
+                                  $$ \prod_e n_e^{\gamma_{e,R}} = K_R, $$
+                                  representing, for instance, chemical activity-product relations or phase fugacity equalities.
+                                </p>
+
+                                <p>
+                                  Numerical results: (gazeous CO2 injection)
+                                  <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                      <div class="p-2">
+                                          <img style="width: 350px;" src="resources/images/gallery/reactive-transport/Sg.gif" />
+                                          <p style="text-align: center;">Gaz saturation.</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img style="width: 350px;" src="resources/images/gallery/reactive-transport/Cc.gif" />
+                                          <p style="text-align: center;">Fraction of gazeous CO2.</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img style="width: 350px;" src="resources/images/gallery/reactive-transport/Cv.gif" />
+                                          <p style="text-align: center;">Fraction of gazeous H2O.</p>
+                                      </div>
+                                  </div>
+                                </p>
+
+                                <p>
+                                  References:
+                                  <ul>
+                                      <li>Fan Yaqing, Louis J. Durlofsky, and Hamdi A. Tchelepi. “A Fully-Coupled Flow-Reactive-Transport Formulation Based on Element Conservation, with Application to CO2 Storage Simulations.” Advances in Water Resources 42 (June 2012): 47–61.</li>
+                                      <li>Ahusborde Etienne, Brahim Amaziane, Stephan De Hoop, et al. “A Benchmark Study on Reactive Two-Phase Flow in Porous Media: Part II - Results and Discussion.” Computational Geosciences 28, no. 3 (2024): 395–412.</li>
+                                  </ul>
+                                </p>
+                            </p>
+                        </div>
+
                         <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
                             <p class="card-text">
                                 <h5>TV Denoising</h5>
-                                We consider the Rudin-Osher-Fatemi model,
-                                $$ \min_{u\in BV(\Omega)\cap L^2(\Omega)} \frac{1}{2}\int_\Omega (u-f)^2\ dx + \alpha\int_\Omega |Du|. $$
 
-                                Numerical results:
-                                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/tv-denoising/cameraman-256.jpg" />
-                                        <p style="text-align: center;">Original Image.</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/tv-denoising/cameraman-noisy.0.1.png" />
-                                        <p style="text-align: center;">Noisy image \(f\).</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/tv-denoising/mesh.gif" />
-                                        <p style="text-align: center;">Mesh.</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/tv-denoising/u.gif" />
-                                        <p style="text-align: center;">Solution \(u\).</p>
-                                    </div>
-                                </div>
+                                <p>
+                                  We consider the Rudin-Osher-Fatemi model,
+                                  $$ \min_{u\in BV(\Omega)\cap L^2(\Omega)} \frac{1}{2}\int_\Omega (u-f)^2\ dx + \alpha\int_\Omega |Du|. $$
+                                </p>
 
-                                References:
-                                <ul>
-                                    <li>Rudin, Leonid I., Stanley Osher, and Emad Fatemi. “Nonlinear Total Variation Based Noise Removal Algorithms.” Physica D: Nonlinear Phenomena 60, no. 1 (November 1, 1992): 259–68.</li>
-                                    <li>Hilb, Stephan, Andreas Langer, and Martin Alkämper. “A Primal-Dual Finite Element Method for Scalar and Vectorial Total Variation Minimization.” Journal of Scientific Computing 96, no. 1 (July 2023): 24.</li>
-                                </ul>
+                                <p>
+                                  Numerical results:
+                                  <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/tv-denoising/cameraman-256.jpg" />
+                                          <p style="text-align: center;">Original Image.</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/tv-denoising/cameraman-noisy.0.1.png" />
+                                          <p style="text-align: center;">Noisy image \(f\).</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/tv-denoising/mesh.gif" />
+                                          <p style="text-align: center;">Mesh.</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/tv-denoising/u.gif" />
+                                          <p style="text-align: center;">Solution \(u\).</p>
+                                      </div>
+                                  </div>
+                                </p>
+
+                                <p>
+                                  References:
+                                  <ul>
+                                      <li>Rudin, Leonid I., Stanley Osher, and Emad Fatemi. “Nonlinear Total Variation Based Noise Removal Algorithms.” Physica D: Nonlinear Phenomena 60, no. 1 (November 1, 1992): 259–68.</li>
+                                      <li>Jacumin Thomas, and Andreas Langer. “An Adaptive Finite Difference Method for Total Variation Minimization.” Numerical Algorithms, ahead of print, March 19, 2025.</li>
+                                  </ul>
+                                </p>
                             </p>
                         </div>
+
                         <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
                             <p class="card-text">
                                 <h5>Image Inpainting</h5> 
-                                For \(t>0\), find \(u(t,\cdot)\) in \(H^1(D)\) such that,
-                                \begin{equation}
-                                    \left\{\begin{array}{ll}
-                                        \partial_t u(t,\cdot) - \Delta u(t,\cdot) = 0, & \text{in}\ D\setminus K, \\
-                                        u(t,\cdot) = f, & \text{in}\ K, \\
-                                        \frac{\partial u(t,\cdot)}{\partial \mathbf{n}} = 0, & \text{on}\ \partial D, \\
-                                    \end{array}\right .
-                                \end{equation}
-                                \[ u(0,\cdot) = \mathbf{1}_{K} f,\ \text{in}\ D. \]
-                                
-                                Numerical results:
-                                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/inpainting/Trui-wn-0.png" />
-                                        <p style="text-align: center;">Original Image.</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/inpainting/Trui-mask-L2-H-0.png" />
-                                        <p style="text-align: center;">Inpainting Mask \(K\).</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img src="resources/images/gallery/inpainting/inpainting.gif" />
-                                        <p style="text-align: center;">Solution \(u\) over time.</p>
-                                    </div>
-                                </div>
 
-                                References:
-                                <ul>
-                                    <li>Marcelo Bertalmio, Guillermo Sapiro, Vincent Caselles, and Coloma Ballester. “Image inpainting”. In Proceedings of the 27th Annual Conference on Computer Graphics and Interactive Techniques, SIGGRAPH ’00, page 417–424, USA, 2000. ACM Press/Addison-Wesley Publishing Co..</li>
-                                    <li>Zakaria Belhachmi, Dorin Bucur, Bernhard Burgeth, and Joachim Weickert. “How to Choose Interpolation Data in Images”. SIAM Journal of Applied Mathematics, 70:333–352, January 2009.</li>
-                                </ul>
+                                <p>
+                                  For \(t>0\), find \(u(t,\cdot)\) in \(H^1(D)\) such that,
+                                  \begin{equation}
+                                      \left\{\begin{array}{ll}
+                                          \partial_t u(t,\cdot) - \Delta u(t,\cdot) = 0, & \text{in}\ D\setminus K, \\
+                                          u(t,\cdot) = f, & \text{in}\ K, \\
+                                          \frac{\partial u(t,\cdot)}{\partial \mathbf{n}} = 0, & \text{on}\ \partial D, \\
+                                      \end{array}\right .
+                                  \end{equation}
+                                  \[ u(0,\cdot) = \mathbf{1}_{K} f,\ \text{in}\ D. \]
+                                </p>
+                                
+                                <p>
+                                  Numerical results:
+                                  <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/inpainting/Trui-wn-0.png" />
+                                          <p style="text-align: center;">Original Image.</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/inpainting/Trui-mask-L2-H-0.png" />
+                                          <p style="text-align: center;">Inpainting Mask \(K\).</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img src="resources/images/gallery/inpainting/inpainting.gif" />
+                                          <p style="text-align: center;">Solution \(u\) over time.</p>
+                                      </div>
+                                  </div>
+                                </p>
+
+                                <p>
+                                  References:
+                                  <ul>
+                                      <li>Marcelo Bertalmio, Guillermo Sapiro, Vincent Caselles, and Coloma Ballester. “Image inpainting”. In Proceedings of the 27th Annual Conference on Computer Graphics and Interactive Techniques, SIGGRAPH ’00, page 417–424, USA, 2000. ACM Press/Addison-Wesley Publishing Co..</li>
+                                      <li>Belhachmi Zakaria, and Thomas Jacumin. “Optimal Interpolation Data for PDE-Based Compression of Images with Noise.” Communications in Nonlinear Science and Numerical Simulation 109 (June 2022): 106278.</li>
+                                  </ul>
+                                </p>
                             </p>
                         </div>
                         <div class="card-body p-4 mb-2" style="width: 100%; text-align: justify; background-color: #f6ee45; border-radius: 30px; color: #595333; overflow-x: scroll;">
                             <p class="card-text">
                                 <h5>Optical Flow</h5>
-                                We consider the following optical flow estimation problem:
-                                $$ \left\{\begin{array}{ll}
-                                    -\alpha \Delta u_1 + K_\rho\star(f_x)^2\ u_1 + K_\rho\star(f_x f_y)\ u_2 = - K_\rho\star(f_x f_t), & \text{in}\ [0,T]\times D, \\
-                                    -\alpha \Delta u_2 + K_\rho\star(f_y f_x)\ u_1 + K_\rho\star(f_y)^2\ u_2 = - K_\rho\star(f_y f_t), & \text{in}\ [0,T]\times D, \\
-                                    \frac{\partial u_1}{\partial\mathbf{n}} = \frac{\partial u_2}{\partial\mathbf{n}} = 0, & \text{on}\ [0,T]\times \partial D.
-                                \end{array}\right . $$
-                                
-                                Numerical results:
-                                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
-                                    <div class="p-2">
-                                        <img style="width: 300px;" src="resources/images/gallery/optical-flow/frame10.png" />
-                                        <p style="text-align: center;">First Image \(f_1\).</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img style="width: 300px;" src="resources/images/gallery/optical-flow/frame11.png" />
-                                        <p style="text-align: center;">Second Image \(f_2\).</p>
-                                    </div>
-                                    <div class="p-2">
-                                        <img style="width: 300px;" src="resources/images/gallery/optical-flow/flow-gl-1-2.png" />
-                                        <p style="text-align: center;">Optical Flow \(\mathbf{u}:=(u_1,u_2)\).</p>
-                                    </div>
-                                </div>
 
-                                References:
-                                <ul>
-                                    <li>A. Bruhn, J. Weickert, and C. Schnörr, <i>Lucas/Kanade Meets Horn/Schunck: Combining Local and Global Optic Flow Methods</i>, International Journal of Computer Vision, 61 (2005), pp. 211–231.</li>
-                                </ul>
-
+                                <p>
+                                  We consider the following optical flow estimation problem:
+                                  $$ \left\{\begin{array}{ll}
+                                      -\alpha \Delta u_1 + K_\rho\star(f_x)^2\ u_1 + K_\rho\star(f_x f_y)\ u_2 = - K_\rho\star(f_x f_t), & \text{in}\ [0,T]\times D, \\
+                                      -\alpha \Delta u_2 + K_\rho\star(f_y f_x)\ u_1 + K_\rho\star(f_y)^2\ u_2 = - K_\rho\star(f_y f_t), & \text{in}\ [0,T]\times D, \\
+                                      \frac{\partial u_1}{\partial\mathbf{n}} = \frac{\partial u_2}{\partial\mathbf{n}} = 0, & \text{on}\ [0,T]\times \partial D.
+                                  \end{array}\right . $$
+                                </p>
                                 
+                                <p>
+                                  Numerical results: (Colors represent the directions of displacement)
+                                  <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;" >
+                                      <div class="p-2">
+                                          <img style="width: 350px;" src="resources/images/gallery/optical-flow/frame10.png" />
+                                          <p style="text-align: center;">First Image \(f_1\).</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img style="width: 350px;" src="resources/images/gallery/optical-flow/frame11.png" />
+                                          <p style="text-align: center;">Second Image \(f_2\).</p>
+                                      </div>
+                                      <div class="p-2">
+                                          <img style="width: 350px;" src="resources/images/gallery/optical-flow/flow-gl-1-2.png" />
+                                          <p style="text-align: center;">Optical Flow \(\mathbf{u}:=(u_1,u_2)\).</p>
+                                      </div>
+                                  </div>
+                                </p>
+
+                                <p>
+                                  References:
+                                  <ul>
+                                      <li>A. Bruhn, J. Weickert, and C. Schnörr, <i>Lucas/Kanade Meets Horn/Schunck: Combining Local and Global Optic Flow Methods</i>, International Journal of Computer Vision, 61 (2005), pp. 211–231.</li>
+                                  </ul>
+                                </p>
                             </p>
                             <!--
                             <p class="card-text">
@@ -199,7 +260,7 @@
                             -->
                         </div>
                         <div class="card-footer mt-2 text-center" style="background-color: #728255; border-radius: 30px; color: #faf7d8;">
-                            <p class="card-text">Last updated: October 2024.</p>
+                            <p class="card-text">Last updated: August 2026.</p>
                         </div>
                     </div>
                 </div>
